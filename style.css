@@ -1,39 +1,52 @@
-.page-container {
-    font-family: "helvetica";
-    margin: 0;
-    padding: 0;
-    background: #FFF;
-    overflow-x: hidden;
-  /*  -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;*/
-}
+/***********************************
+TYPOGRAPHIE
+************************************/
 
-h2,h3,h4,h5,h6,p,.btn,a {
+h1,h2,h3,h4,p,a {
     font-family: "helvetica", "arial", "sans-serif";
     font-weight: 400;
-    color: #333333;
+    color: #000;
 }
 
 p {
-    font-size: 11px;
+    font-size: 1rem;
 }
 
-
-h2 {
-    font-size: 22px;
+h2,{
+    font-size: 2rem;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333;
+}
+
+h4{
+    font-weight: bold;
 }
 
 a{
     text-decoration: none;
 }
+
+/***********************************
+        BODY
+************************************/
+
+.page-container {
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+}
+
+/*style des images de fond*/
+.presentation_banniere, .proposition_commerciale {
+   background: 50% 50% no-repeat;
+    background-size: cover;
+}
+
 
 /************************************
             HEADER
@@ -43,14 +56,9 @@ a{
     justify-content: space-around;
     align-items: center;
 }
-/*
-.navbar {
-    margin-bottom: 0;
-    z-index: 1;
-}*/
 
 /*bannière icone chouette*/
-.navbar-brand img {
+.navbar-icone img {
     max-height: 40px;   
 }
 
@@ -65,7 +73,6 @@ li a{
     padding-bottom: 3px;
     margin-right: 20px;
 }
-
 li a:hover{
     font-weight: bold;
     border-bottom: 3px solid #000;
@@ -77,52 +84,37 @@ li a:hover{
 *******************************************/
 
 /*Présentation bannière*/
-/*style des images de fond*/
-.bloc {
-    width: 100%;
-    clear: both;
-    position: relative;
-    background: 50% 50% no-repeat;
-    background-size: cover;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
 /*fond image banière*/
-.bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+.presentation_banniere {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(58, 2, 2, 0.5)), url("img/la-chouette-agence-banniere.jpg");
     background-attachment: fixed; 
 }
 
-.bloc-lg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tight-width-whitespace {
+/*style - alignement texte dans image bannière*/
+.bloc_presentation, .cta_banniere_bloc, .proposition_commerciale_cadre {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 600px;
     margin: auto;
+    padding: 100px 50px;
 }
 
-.logo_bc{
+.logo_agence{
     width: 100px;
 }
 
 .titre-h1{
     font-size: 2.3rem;
     font-weight: 400;
-    color: #F3976C;
+    color:rgb(255, 156, 110);
 }
 
 /*bannière - bouton contact*/
 .btn-atomic-tangerine{
-    background: #F3976C;
+    background: rgb(243, 151, 108);
     color: #FFFFFF;
     border-radius: 40px;
     width: 80px;
@@ -210,179 +202,126 @@ li a:hover{
 /****************************************
     SECTION BANNIERE COMMERCIALE
 ******************************************/
-
-.bgc-atomic-tangerine {
-    background-color: #F3976C;
-}
-
-.bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
-}
-
-.bloc-lg {
-    padding: 100px 50px;
-}
-
-.d-bloc {
-    color: rgba(255, 255, 255, .7);
-}
-
-.d-bloc button:hover {
-    color: rgba(255, 255, 255, .9);
-}
-
-.d-bloc{
-    color: rgba(0, 0, 0, .5);
-}
-
-.d-bloc button:hover {
-    color: rgba(0, 0, 0, .7);
-}
-
-.d-bloc icon {
-    border-color: rgba(0, 0, 0, .7);
-}
-
-.d-bloc,
-.l-bloc {
-    color: rgba(0, 0, 0, .5);
-}
-
-.d-bloc button:hover,
-.l-bloc button:hover {
-    color: rgba(0, 0, 0, .7);
-}
-
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.mg-md {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.white {
-    color: #FFFFFF;
-}
-
-
-.bold-link {
-    font-weight: 900;
-    text-decoration: underline;
-}
-
-
-/*portfolio*/
-
-.l-bloc{
-    border-color: rgba(0, 0, 0, .7);
-}
-.bg-repeat {
-    background: repeat;
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
-
-a[data-lightbox] {
-    position: relative;
-    display: block;
+/*image de fond*/
+.proposition_commerciale {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(58, 2, 2, 0.5)), url("img/image-de-presentation.jpg");
+    background-attachment: fixed; 
     text-align: center;
 }
 
-a[data-lightbox]:hover::before {
-    content: "+";
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-    font-size: 32px;
-    width: 50px;
-    height: 50px;
-    margin-left: -25px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, .6);
+/*lien page contact*/
+.bold-link {
+    font-weight: bold;
     color: #FFF;
-    font-weight: 100;
+    text-decoration: underline;
+}
+.proposition_commerciale_cadre-titre, .proposition_commerciale_cadre-resume{
+    color: #FFF;
+}
+
+
+/****************************************
+    SECTION PORTFOLIO
+******************************************/
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bloc_portfolio{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vignette_realisation{
+    width: 30%;
+    max-height: 60%;   
+    padding: 10px 20px 10px 20px; 
+    text-align: center;
+}
+
+/*origine placement photo*/
+a[data-lightbox] {
+    position: relative;
+}
+
+/*croix de selection*/
+a[data-lightbox]:hover::before{   
+   /*placement de la croix*/
     z-index: 1;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
+    top:-160px;
+    left:115px;
+    
+    /*style croix*/
+    content: "+";
+    font-family: Arial;
+    font-size: 32px;  
+    width: 30px;
+    height: 30px;     
+    color: #FFF;
+    
+    /*rond*/    
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    padding : 12px 15px 15px 15px; 
 }
 
+/*hover blanc sur image*/
 a[data-lightbox]:hover img {
-    opacity: 0.6;
-    -webkit-animation-fill-mode: none;
-    animation-fill-mode: none;
-}
-
-.snapshot-lb .modal-body {
-    padding-bottom: 45px;
-}
-
-.snapshot-lb .lightbox-caption {
-    padding: 0;
-    color: rgba(0, 0, 0, .5);
-    background: none;
-}
-.portfolio-thumb {
-    margin-bottom: 24px;
-}
-
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
-}
-.black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+    opacity: 0.5;
 }
 
 
+/****************************************
+    SECTION CTA
+******************************************/
 
-/* redonner vie à vos projet */
-
-.btn-clean {
-    border: 1px solid rgba(0, 0, 0, .08);
-    border-bottom-color: rgba(0, 0, 0, .1);
-    text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
-    box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
+.cta_banniere {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(58, 2, 2, 0.5)), url("img/la-chouette-agence-banniere.jpg"); 
+}
+.cta_banniere_bloc{
+    text-align: center;
 }
 
-/* CTA*/
-.bgc-dark-slate-blue {
-    background-color: #364577;
+.cta_banniere_bloc-titre{
+    color:#FFF;
 }
 
-/*footer*/
-.row-no-gutters {
-    margin-right: 0;
-    margin-left: 0;
+/****************************************
+    FOOTER
+******************************************/
+footer{
+    padding: 20px 0 20px 0;
+    background-color: #F3976C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.row.row-no-gutters > [class^="col-"],
-.row.row-no-gutters > [class*=" col-"] {
-    padding-right: 0;
-    padding-left: 0;
+.informations_text{
+    line-height: 1rem;
+    text-align: center;
+}
+.mailto{
+    text-decoration: underline;
+    font-weight: bold;
 }
 
-.icon-md {
+.informations_reseaux{
+    margin-top: 1rem ;
+    margin-bottom: 1rem;;
+}
+
+.fa {
     font-size: 30px;
 }
 
-.social {
-    max-width: 400px;
-    margin: auto auto auto auto;
-}
-.bloc-sm {
-    padding: 20px 50px;
-}
+
+
 
 
 
