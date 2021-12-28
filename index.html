@@ -3,16 +3,15 @@
 
 		<head>
 			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta name="keywords" content="Entreprise webdesign Lyon, site web design, définir identité visuelle, développer un projet, adapter sa communication, refonte, promouvoir,accroître sa notoriété, augmenter la visibilité">
 			<meta name="description" content="Que vous ayez un site web qui a besoin d’un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier. ">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
+			
 			<title>La Chouette Agence</title>
 			
 			<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
 			<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
 			<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">			
-			<!--<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">-->
 			<link rel="stylesheet" type="text/css" href="style.css">
 			<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 				
@@ -21,7 +20,7 @@
 			<script src="./js/bootstrap.js"></script>
 			<script src="./js/blocs.js"></script>
 			<script src="./js/jquery.touchSwipe.js" defer></script>
-			<script src="./js/gmaps.js"></script>	    
+			<script src="./js/gmaps.js"></script>
 		</head>
 
 		<!-- Principal conteneur -->
@@ -89,7 +88,9 @@
 								Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.
 							</p>
 						</div>
-					</div>			
+					</div>					
+				<!--service bloc compétences - END-->	
+
 					<!-- avis client-->
 					<div class="service_avis">
 						<p class="avis">"La Chouette Agence est une excellente agence web !
@@ -97,11 +98,10 @@
 							Cela nous a aidé à doubler nos ventes en lignes à Lyon"</p>	
 							<p class="auteur_avis">Maxime Guibard, PDG de A vos fourchettes</p>
 					</div>
+					<!-- avis client - END-->
 				</section>	
-				<!--service bloc compétences - END-->
 			</section> 
 			<!-- section services - END -->
-
 
 				<!-- section bannière - proposition commerciale -->
 				<section class="proposition_commerciale">
@@ -126,40 +126,48 @@
 
 					<div class="bloc_portfolio">
 
-						<div class="vignette_realisation">							
-							<a href="#" data-lightbox="journal.jpg">
-								<img src="img/journal.jpg" alt="image de journal"/>
-							</a>
-							<h3>Refonte d'un site web pour un journal local</h3>
-							<p>Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.</p>
+						<div class="bloc_portfolio_col01">
+							<div class="vignette_realisation">	
+								<a href="#" data-lightbox="img/journal.jpg" data-gallery-id="gallery-1"
+								data-caption="Refonte d'un site web pour un journal local." data-frame="snapshot-lb">
+								<img src="img/journal.jpg" alt="image de journal" 
+									class="img-responsive portfolio-thumb" /></a>						
+								<h3>Refonte d'un site web pour un journal local</h3>
+								<p>Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.</p>
+							</div>
+
+							<div class="vignette_realisation">
+								<a href="#" data-lightbox="img/photographe.jpg" data-gallery-id="gallery-1"
+								data-caption="Création d'un site web pour photographes." data-frame="snapshot-lb">
+								<img src="img/photographe.jpg" alt="image d'un photographe." 
+									class="img-responsive portfolio-thumb" /></a>			
+								<h3 >Création d'un site web pour photographes</h3>
+								<p>Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.</p>			
+							</div>
 						</div>
 
-						<div class="vignette_realisation">
-							<a href="#" data-lightbox="photographe.jpg">
-								<img src="img/photographe.jpg" alt="image de photographe"/>
-							</a>
-							<h3 >Création d'un site web pour photographes</h3>
-							<p>Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.</p>			
-						</div>
+						<div class="bloc_portfolio_col02">
+							<div class="vignette_realisation">
+								<a href="#" data-lightbox="img/materiel.jpg" data-gallery-id="gallery-1"
+								data-caption="Création d'un site internet pour un voyageur." data-frame="snapshot-lb">
+								<img src="img/materiel.jpg" alt="image d'accessoires et matériels vidéos" 
+									class="img-responsive portfolio-thumb" /></a>	
+								<h3>Création d'un site internet pour un voyageur</h3>
+								<p>Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.</p>
+							</div>
 
-						<div class="vignette_realisation">
-							<a href="#" data-lightbox="materiel.jpg">
-								<img src="img/materiel.jpg" alt="image d'accessoires et matériels vidéos"/>
-							</a>
-							<h3>Création d'un site internet pour un voyageur</h3>
-							<p>Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.</p>
-						</div>
-
-						<div class="vignette_realisation">
-							<a href="#" data-lightbox="bureau.jpeg">
-								<img src="img/bureau.jpg"  alt="image de bureau"/>
-							</a>
-							<h3>Conception d'un site pour une agence de mariage</h3>
-							<p>Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations</p>
-						</div>						
+							<div class="vignette_realisation">
+								<a href="#" data-lightbox="img/bureau.jpg" data-gallery-id="gallery-1"
+								data-caption="Conception d'un site pour une agence de mariage." data-frame="snapshot-lb">
+								<img src="img/bureau.jpg" alt="image de bureau" 
+									class="img-responsive portfolio-thumb" /></a>		
+								<h3>Conception d'un site pour une agence de mariage</h3>
+								<p>Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations</p>
+							</div>	
+						</div>					
 					</div>
 				</section>
-				<!-- section portfolio  - END -->
+				<!--section portfolio  - END -->
 
 				<!-- section cta -->
 				<section class="cta_banniere">								
