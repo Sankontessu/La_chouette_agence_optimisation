@@ -9,7 +9,7 @@ h1,h2,h3,h4,p,a,label, textarea, input, a {
     letter-spacing: 0.5px;
 }
 
-p, textarea, h3, label, a, button {
+p, textarea, h3, label, a, button, input {
     font-size: 1rem;
 }
 
