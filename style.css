@@ -86,7 +86,7 @@ li a:hover{
 
 /*fond image banière*/
 .presentation_banniere {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(58, 2, 2, 0.5)), url("img/la-chouette-agence-banniere.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(58, 2, 2, 0.5)), url("img/la-chouette-agence-banniere.webp");
     background-attachment: fixed; 
 }
 
@@ -216,7 +216,7 @@ li a:hover{
 ******************************************/
 /*image de fond*/
 .proposition_commerciale {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(58, 2, 2, 0.5)), url("img/image-de-presentation.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(58, 2, 2, 0.5)), url("img/image-de-presentation.webp");
     background-attachment: fixed; 
 }
 
@@ -262,12 +262,17 @@ li a:hover{
     margin: 20px;
 }
 
+.vignette_realisation img{
+    width: 300px;
+    height: 300px;
+}
+
 
 /****************************************
     SECTION CTA
 ******************************************/
 .cta_banniere {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(58, 2, 2, 0.5)), url("img/la-chouette-agence-banniere.jpg"); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(58, 2, 2, 0.5)), url("img/la-chouette-agence-banniere.webp"); 
 }
 .cta_banniere_bloc{
     text-align: center;
