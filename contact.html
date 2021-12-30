@@ -15,11 +15,7 @@
 			<link rel="stylesheet" type="text/css" href="style.css">
 
 			<script src="https://kit.fontawesome.com/b10d48f723.js" crossorigin="anonymous"></script>
-			<script src="./js/jquery-2.1.0.min.js"></script>
-			<script src="./js/bootstrap.min.js"></script>
-			<script src="./js/blocs.min.js"></script>
-			<script src="./js/jqBootstrapValidation.js"></script>
-			<script src="./js/formHandler.js"></script>								
+						
 		</head>
 
 		<!-- Principal conteneur -->
@@ -33,7 +29,7 @@
 							
 						<ul class="site-navigation">
 							<li><a href="index.html">Accueil</a></li>
-							<li><a href="page2.html">Contact</a></li>
+							<li><a href="contact.html">Contact</a></li>
 						</ul>		
 					</nav>	
 				</header>
@@ -54,27 +50,30 @@
 				<!-- Bandeau contact - END -->
 
 				<!-- bloc formulaire-->
+				<div class="bloc_formulaire">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label> Votre Nom :</label>
+						<label> Votre Nom :</label></br>
 						<input id="name" class="form-control" required />
 					</div>
 					<div class="form-group">
-						<label> Votre Adresse email :</label>
+						<label> Votre Adresse email :</label></br>
 						<input id="email" class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
-						<label>Comment nous avez-vous connu ? (contact, internet, journal, etc)</label>
+						<label>Comment nous avez-vous connu ? (contact, internet, journal, etc)</label></br>
 						<input class="form-control" type="email" required id="input_504" />
 					</div>
 					<div class="form-group">
-						<label> Résumez-nous en quelques lignes votre projet et ajoutez-y autant de détails que nécessaire :</label>
+						<label> Résumez-nous en quelques lignes votre projet et ajoutez-y autant de détails que nécessaire :</label></br>
 						<textarea id="message" class="form-control" rows="15" cols="50" required></textarea>
 					</div> 
 					<button class=" cta-hero btn-envoyer" type="submit">
 						Envoyer ma demande
 					</button>
 				</form>
+				</div>
+
 				<!-- bloc formulaire END -->
 
 				<!-- Footer -->

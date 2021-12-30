@@ -41,6 +41,7 @@ a{
     margin: 0;
     padding: 0;
     background: #FFF;
+    overflow-x: hidden!important;
 }
 
 /*style des images de fond*/
@@ -57,11 +58,12 @@ a{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow-x: hidden!important;
 }
 
 /*bannière icone chouette*/
 .navbar-icone img {
-    max-height: 40px;   
+    height: 40px;   
 }
 
 /*texte navigation*/
@@ -251,142 +253,17 @@ li a:hover{
 }
 
 .vignette_realisation{
-    width: 320px;
+    width: 300px;
     height: 460px;   
     text-align: center;
+    object-fit: cover;
+    overflow: hidden;
 
     background-color: rgb(242, 242, 242);
     border-radius: 25px;
     box-shadow: 6px 6px 10px rgb(150, 150, 150);
     padding: 20px;
     margin: 20px;
-}
-
-/*origine placement photo*/
-a[data-lightbox] {
-    position: relative;
-}
-
-/*croix de selection*/
-a[data-lightbox]:hover::before{   
-   /*placement de la croix*/
-    z-index: 1;
-    position: absolute;
-    top:-160px;
-    left:125px;
-    
-    /*style croix*/
-    content: "+";
-    font-family: Arial;
-    font-size: 32px;  
-    width: 30px;
-    height: 30px;     
-    color: #FFF;
-    
-    /*rond*/    
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 50%;
-    padding : 12px 15px 15px 15px; 
-}
-
-/*hover blanc sur image*/
-a[data-lightbox]:hover img {
-    opacity: 0.5;
-}
-
-/****************************************
-    FENETRE VISIONNEUSE PORTFOLIO
-******************************************/
-/* lance la visionneuse*/
-#lightbox-modal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-    display: none;
-    overflow: hidden;
-    -webkit-overflow-scrolling: touch;
-    outline: 0
-}
-
-.modal-body {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 15px;
-    width: 860px;
-}
-
-/*contenu de fenetre*/
-.modal-content {
-    position: relative;
-    background-color: rgb(242, 242, 242);
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-   
-    border: 1px solid #999;
-    border: 1px solid rgba(0, 0, 0, .2);
-    border-radius: 6px;
-    outline: 0;
-    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
-    box-shadow: 0 3px 9px rgba(0, 0, 0, .5)
-}
-
-/*image dans visionneuse*/
-.img-responsive{
-    align-self: center;
-    width: 320px;
-}
-
-/*couleurs des icones de navigation visionneuse*/
-.prev-lightbox, .next-lightbox, .close-lightbox{
-    color: #fff;
-    background: #000;
-    padding: 10px;
-}
-
-/*croix de fermeture*/
-.close-lightbox {
-    position: absolute;
-    font-size: 40px;
-    top: 20px;
-    right: 20px;
-    z-index: 20;
-    border: none;
-    line-height: 30px;
-}
-/*chevrons de navigation visionneuse*/
-.prev-lightbox, .next-lightbox {
-    font-size: 20px;
-    transition: all .2s ease-in-out;
-    position: absolute;
-    top: 45%;
-    z-index: 1; 
-}
-/*chevron gauche*/
-.prev-lightbox{
-    left: 30px;
-}
-
-/*chevron droite*/
-.next-lightbox {
-    right: 30px;
-}
-
-/*texte dans visionneuse*/
-.lightbox-caption{
-    text-align: center;
-    font-weight: bold;
 }
 
 
@@ -461,7 +338,13 @@ footer{
 /***************************************************
             FORMULAIRE
 *****************************************************/
+.bloc_formulaire{
+display: flex;
+justify-content: center;
+}
+
 #form_1{
+
     margin: 30px 0 30px 0;
 }
 
@@ -530,12 +413,12 @@ font-weight: bold;
 }
 
 /*media queries - téléphone */
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
        
     /*index*/   
     /*bannière icone chouette*/
     .navbar-icone img {
-        max-height: 30px;   
+        height: 30px;   
     }
     /* menu navigation*/   
     li a{
@@ -554,6 +437,7 @@ font-weight: bold;
     .portfolio h2{
         font-size: 1rem;
     }
+
     .cta-hero {
         font-size: 1rem;
     }
