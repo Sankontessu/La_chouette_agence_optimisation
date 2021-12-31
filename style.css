@@ -56,11 +56,6 @@ a{
     overflow-x: hidden!important;
 }
 
-/*bannière icone chouette*/
-.navbar-icone img {
-    height: 40px;   
-}
-
 /*texte navigation*/
 .site-navigation {
     display: flex;
@@ -414,12 +409,10 @@ textarea{
     .navbar{
         justify-content: center;
     }
-    
-    /*bannière icone chouette*/
-    .navbar-icone img {
-        height: 30px;   
+    .navbar-icone img{
+        height: 30px;
     }
-
+    
     /*bannière présentation*/
     .titre-h1{
         font-size: 1.5rem;
