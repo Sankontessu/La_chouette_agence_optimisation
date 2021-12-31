@@ -97,7 +97,6 @@ li a:hover{
 }
 
 .logo_agence{
-    width: 100px;
     border: solid 2px #fff;
     border-radius:50px;
     box-shadow: 3px 3px 8px #000;
@@ -412,7 +411,7 @@ textarea{
     .navbar-icone img{
         height: 30px;
     }
-    
+
     /*bannière présentation*/
     .titre-h1{
         font-size: 1.5rem;
