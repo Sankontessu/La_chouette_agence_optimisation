@@ -3,7 +3,7 @@ TYPOGRAPHIE
 ************************************/
 
 h1,h2,h3,h4,p,a,label, textarea, input, a {
-    font-family: "helvetica", "arial", "sans-serif";
+    font-family: 'Helvetica', 'Arial', sans-serif;
     font-weight: 400;
     color: #000;
     letter-spacing: 0.5px;
